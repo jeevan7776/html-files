@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>if else program</title>
+</head>
+<body>
+<script type="text/javascript">
+	var a=20
+	if (a==10) {
+		document.write("a is equal to 20" )
+	}
+	else if (a==15) {
+		document.write("b is equal to 20")
+	}
+	else if (a==21) {
+		document.write("c is equal to 20")
+	}
+
+	else {
+		document.write("a,b,c are not equal to 20")
+	}
+</script>
+
+<!-- switch case -->
+<script type="text/javascript">
+	var grade='E';
+	switch (grade)
+	{
+		case 'A' :result="A grade";break;
+		case 'E' :result="B grade";break;
+		case 'C':result="C grade"; break;
+		case 'D':result="D grade"; break;
+		default : result="no grade";
+	}
+	document.write(result);
+</script>
+<!-- for loop -->
+<script type="text/javascript">
+	for (i = 10; i <=20; i++) {
+		
+		document.write(i+" ")
+	}
+</script>
+<!-- while loop and do while -->
+<script type="text/javascript">
+	var i=10;
+	do
+       {
+		document.write(i+" ");
+		i++;
+	}
+	
+	while(i<=30);
+	
+</script>
+
+<div>
+	<script type="text/javascript">
+		emp={
+			id:1234,name:"praneethreddy",salary:4000
+		}
+		document.write(emp.id+" "+emp.name+" "+emp.salary);
+	</script>
+
+
+<!--  -->
+	<script type="text/javascript">
+		var car= new Object();
+		car.price=4000;
+		car.make="ford";
+		car.model="2012";
+        document.write(car.make+""+car.make+""+car.model);
+
+	</script>
+</div>
+<div>
+Current Date and Time: <span id="txt"></span>  
+<script>  
+var today=new Date();  
+document.getElementById('txt').innerHTML=today;  
+</script> 
+</div>
+<script type="text/javascript">
+	document.write(20>25);
+</script> 
+
+<script>
+document.writeln("<br/>navigator.appCodeName: "+navigator.appCodeName);
+document.writeln("<br/>navigator.appName: "+navigator.appName);
+document.writeln("<br/>navigator.appVersion: "+navigator.appVersion);
+document.writeln("<br/>navigator.cookieEnabled: "+navigator.cookieEnabled);
+document.writeln("<br/>navigator.language: "+navigator.language);
+document.writeln("<br/>navigator.userAgent: "+navigator.userAgent);
+document.writeln("<br/>navigator.platform: "+navigator.platform);
+document.writeln("<br/>navigator.onLine: "+navigator.onLine);
+
+</script>
+<div>
+<script type="text/javascript">
+	function validateform()
+	{
+		var name=document.myform.name.value;
+		var password=document.myform.password.value;
+
+		if (name==null|| name=="") {
+			alert("name can't be blank");
+			return false;
+		}
+		else if (password.length<6) {
+			alert("password length mustbe atleast 6 character");
+			return false;
+		}
+	}
+</script>
+<form name="myform" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()">
+NAME:<input type="text" name="name">
+PASSWORD:<input type="password" name="password">
+<input type="submit" value="register">	
+</form>
+<!-- <form name="myform" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >   -->
+<!-- Name: <input type="text" name="name"><br/>   -->
+<!-- Password: <input type="password" name="password"><br/>   -->
+<!-- <input type="submit" value="register">   -->
+<!-- </form> -->
+</div>  
+
+
+<div>
+	<script type="text/javascript">  
+function counth2(){  
+var totalh2=document.getElementsByTagName("h2");  
+alert("total h2 tags are: "+totalh2.length);  
+}  
+function counth3(){  
+var totalh3=document.getElementsByTagName("h3");  
+alert("total h3 tags are: "+totalh3.length);  
+}  
+</script>  
+
+<h2>This is h2 tag</h2>  
+<h3>This is h3 tag</h3>  
+<h3>qq</h3>
+  <h3>ww</h3>
+  <h3>ww</h3>
+  <h3>ww</h3>
+<button onclick="counth2()">count h2</button>  
+<button onclick="counth3()">count h3</button>  
+</div>
+
+</body>
+</html>

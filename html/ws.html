@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Site Creation</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/jquery.js">
+	</script>
+    <script src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/amazingslider.js"></script>
+    <script src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/initslider-1.js"></script>
+</head>
+<body>
+       <nav class="navbar navbar-inverse">
+       	<div class="container">
+       		<div class="navbar-header">
+       			<a class="navbar-brand" href="http://logok.org/wp-content/uploads/2014/04/Apple-Logo-black.png">APPLE</a>
+       		</div>
+       		<ul class="nav navbar-nav navbar-right">
+       			<li ><a href="#">HOME</a></li>
+       			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                              <li> <a href="#">page 1</a></li>
+                              <li><a href="#">page 2</a></li>
+                        </ul>
+
+                        </li>
+       			<li ><a href="#">BLOG</a></li>
+       			<li ><a href="#">CONTACT</a></li>
+       			<li ><a href="#">VIEW</a></li>
+       		</ul>
+       	</div>
+       </nav>
+       <style>
+       	.h2
+       	{
+       		text-align: left;
+       		color:aqua;
+       		font-family:Georgia, serif;
+       	}
+       </style>
+
+
+       
+      <div class="container-fluid">
+      
+           
+				  <img class="mySlides" src="http://www.eveboo.com/wp-content/uploads/2013/04/apple-logo-black-and-white-1080p-hd-black-wallpaper.jpg" style="width:100%" height="550">
+				  <div class="carousel-caption">
+				       <h2 class="h2">APPLE THINK DIFFERENT</h2>
+			      </div>
+			 
+				  <img class="mySlides" src="http://www.freedigitalphotos.net/images/img/homepage/87357.jpg" style="width:100%" height="550">
+				  <img class="mySlides" src="http://www.eveboo.com/wp-content/uploads/2013/04/apple-logo-black-and-white-1080p-hd-black-wallpaper.jpg" style="width:100%" height="550">
+       </div>
+
+
+
+     <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="container">
+	
+			<ul class="breadcrumb">
+			<li><a href="#">html</a></li>
+			<li><a href="#">css</a></li>
+	    	<li><a href="#">javascript</a></li>
+	    	<li class="disabled"><a href="#">bootstrap</a></li>
+	    	<li><a href="#">jquery</a></li>
+	    	</ul>
+    	</div>
+
+    	<div class="container">
+			    	<h2>Glyphicons</h2>
+			    	<p><a href="#" class="btn btn-info btn-lg">envelope  <span class="glyphicon glyphicon-envelope"></span></a></p>
+			    	<p> 
+			    <button  class="btn btn-info"> 
+			      <span class="glyphicon glyphicon-search"></span>
+			    </button>  
+			  </p>  
+    	</div>
+    	  
+    	  <div class="container">
+	    		<div class="list-group">
+		    		<a href="#" class="list-group-item"> <span class="badge">1</span>yalla</a>
+		    		<a href="#" class="list-group-item list-group-item-info">malibu<span class="badge">12</span></a>
+		    		<li class="list-group-item">reddy <span class="badge">12</span></li>             	
+	    		</ul>
+    	</div>
+</div>
+
+<div class="container">
+	<button class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>  
+  <div id="demo" class="collapse">  
+Tigers and Lions are the most ferocious animals on the earth. They belong to the felidae(cat) family.   
+They are both from the four big cats. These four big cats are Lion, Tiger, Leopard, and Jaguar.  
+ These animals reside on the top of the food chain and don't have any predators.  
+  </div>  
+</div>  
+
+<div class="container">  
+ <a data-toggle="collapse" href="#collapse1">Collapsible panel</a>  
+  
+      <div id="collapse1" class="panel-collapse collapse">  
+        <div >Panel Body</div>  
+        <div >Panel Footer</div>  
+      </div>  
+    </div>  
+
+		<div class="container">
+		    <script type="text/javascript">  
+		function getcube(){  
+		var number=document.getElementById("name").value;  
+		alert(number*number);  
+		}  
+		</script>  
+		<form>  
+		Enter No:<input type="text" id="name" name="number"/><br/>  
+		<input type="button" value="cube" onclick="getcube()"/>  
+		</form>  
+		</div>
+
+					<div class="container">
+						<script type="text/javascript" >  
+					function showcommentform() {  
+					var data="Name:<input type='text' name='name'><br>Comment:<br><textarea rows='5' cols='80'></textarea> <br><input type='submit' value='Post Comment'>";
+					document.getElementById('mylocation').innerHTML=data;  
+					}  
+					</script>  
+					<form name="myForm">  
+					<input type="button" value="comment" onclick="showcommentform()">  
+					<div id="mylocation"></div>  
+					</form> 
+					</div>
+		<div class="container">
+			<script>
+				window.alert("HELLO JEEVAN");
+				document.write("how are you");
+
+			</script>
+		</div>
+
+			<div class="container">
+				
+			<button onclick="myFunction()">Try it</button>
+
+			<script>
+			function myFunction() {
+			    alert("I am an alert box!");
+			}
+			</script>
+
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div id="amazingslider-1" style="display:flex;position:fixed;margin:30px auto 50px;">
+							<ul class="amazingslider-slides" style="display:flex;">
+								<li><img src="http://www.mapsofindia.com/wallpapers/republic-day/26-jan-republic-day-picture.jpg" alt="india flag">
+									<li><img src="http://kingofwallpapers.com/images-of-cars/images-of-cars-013.jpg" alt="luxary cars">
+									<li><img src="https://static.pexels.com/photos/33045/lion-wild-africa-african.jpg" alt="lion">
+										<li><img src="http://www.zastavki.com/pictures/originals/2013/Photoshop_Image_of_the_horse_053857_.jpg" alt="horse">
+											
+										</li>
+									</li>
+										
+									</li>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+</body>
+</html>
+
+

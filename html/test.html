@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example of Bootstrap 3 Dismissible Popover</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover({
+        placement : 'top'
+    });
+});
+</script>
+<style type="text/css">
+	.bs-example{
+    	margin: 150px 50px;
+    }
+    .popover-demo{
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+<body>
+<div class="bs-example">
+    <div class="popover-demo">
+        <a href="#" class="btn btn-primary" data-toggle="popover" tabindex="0" data-trigger="focus" data-content="Constructed on either a commercial truck chassis">CLASS A</a>
+        <a href="#" class="btn btn-success" data-toggle="popover" tabindex="1" data-trigger="focus" title="Popover title" data-content="Another popover">CLASS B</a>
+        <a href="#" class="btn btn-info" data-toggle="popover" tabindex="2" data-trigger="focus" title="Popover title" data-content="A larger popover to demonstrate the max-width of the Bootstrap popover.">CLASS C</a>
+        <a href="#" class="btn btn-warning" data-toggle="popover" tabindex="3" data-trigger="focus" title="Popover title" data-content="The last tip!">FIFTH WHEEL</a>
+    </div>
+    <p><strong>Note:</strong> To hide the popover you can either click the next button or click outside.</p>
+</div>
+</body>
+</html>                                		
